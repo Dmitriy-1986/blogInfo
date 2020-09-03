@@ -1,0 +1,134 @@
+body {
+    background: url(../images/header-bg-texture.png);
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9000;
+    margin-bottom: 0;
+    color: #b7b7b7;
+    padding: 10px;
+    height: 20px;
+    background-color: #2f2f2f;
+}
+
+header {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 10px;
+    max-width: 980px;
+    height: 80px;
+    background-color: white;
+}
+
+@media(max-width: 1050px) {
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+h1 {
+    margin-left: 50px;
+    border-bottom: 1px solid grey;
+}
+
+nav {
+    margin-top: -25px;
+    margin-left: auto;
+    max-width: 340px;
+}
+
+ul {
+    margin: 0;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav,
+ul,
+li {
+    padding: 3px 10px 3px 10px;
+    transition: 2s;
+}
+nav>ul>li>a {
+    text-decoration:none;
+    color: black;
+}
+
+nav>ul>li:hover {
+    background-color: #2f2f2f;
+}
+
+nav>ul>li>a:hover {
+    color: #b7b7b7;
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 980px;
+ /*    height: 780px; */
+    background-color: white;
+}
+
+@media(max-width: 1050px) {
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+.news {
+color: white;
+border-top: 1px solid red;
+border-left: 1px solid red;
+margin-bottom: 10px;
+
+}
+
+.news-box {
+ background-color: red;
+ width: 50px;
+ padding: 0px 5px 0px 4px;
+}
+
+.box {
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-indent: 1.5em;
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    max-width: 980px;
+    height: 20px;
+    background-color: white;
+}
+
+@media(max-width: 1050px) {
+    footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
