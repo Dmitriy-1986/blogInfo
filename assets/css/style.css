@@ -73,7 +73,7 @@ li {
 nav>ul>li>a {
     text-decoration:none;
     color: black;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 nav>ul>li:hover {
