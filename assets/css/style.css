@@ -184,6 +184,9 @@ main {
     text-decoration: none;
 }
 
+.box-title {
+    text-align: center;
+}
 
 .create-date {
     display: flex;
