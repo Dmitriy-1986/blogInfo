@@ -41,13 +41,6 @@ h1 {
     border-bottom: 1px solid grey;
 }
 
-@media(max-width: 550px) {
-    h1 {
-        text-align: center;
-    }
-
-}
-
 nav {
     margin-top: -25px;
     margin-left: auto;
