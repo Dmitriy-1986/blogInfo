@@ -116,6 +116,18 @@ margin-bottom: 10px;
     text-indent: 1.5em;
 }
 
+.info {
+    border-bottom:1px dotted grey;
+    padding: 10px;
+}
+
+.create-date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .7em;   
+    padding: 10px 10px 0 0; 
+}
+
 footer {
     margin: 0 auto;
     margin-top: 10px;
