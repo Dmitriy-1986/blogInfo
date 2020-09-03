@@ -34,11 +34,16 @@ header {
         margin-left: 20px;
         margin-right: 20px;
     }
-
 }
 
 h1 {
     border-bottom: 1px solid grey;
+}
+
+@media(max-width: 550px) {
+    h1 {
+        text-align: center;
+    }
 }
 
 nav {
