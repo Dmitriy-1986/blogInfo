@@ -25,7 +25,7 @@ header {
     margin-top: 60px;
     padding: 10px;
     max-width: 980px;
-    height: 80px;
+    height: 100px;
     background-color: white;
 }
 
@@ -37,6 +37,8 @@ header {
 }
 
 h1 {
+    margin: 0;
+    padding: 10px 0 10px 0;
     border-bottom: 1px solid grey;
 }
 
@@ -46,44 +48,57 @@ h1 {
     }
 }
 
+.navigation {
+    padding: 10px 0 10px 0;
+}
+
 nav {
-    margin-top: -25px;
-    margin-left: auto;
-    max-width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-@media(max-width: 550px) {
-    nav { 
-        margin-left: none;
-        margin: 0 auto;
-        font-size: .8em;
-    }
-}
-
-ul {
-    margin: 0;
-}
-
-nav,
 ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center; 
     list-style-type: none;
-    max-width: 340px;
+    margin: 0;
 }
 
-nav,
 ul,
 li {
     padding: 3px 10px 3px 10px;
     transition: 2s;
 }
+
 nav>ul>li>a {
     text-decoration:none;
     color: black;
 }
 
+@media(max-width: 550px) {
+    nav {
+        justify-content: center;
+        align-items: center; 
+    }
+    nav>ul {
+        justify-content: center;
+        align-items: center; 
+    }
+    nav>ul>li>a {
+        font-size: .7em;
+    }
+    
+}
+
+@media(max-width: 300px) {
+    ul, li {
+        padding: 3px 5px 3px 5px;
+    }
+}
 nav>ul>li:hover {
     background-color: #2f2f2f;
 }
@@ -108,17 +123,17 @@ main {
     }
 }
 .news {
-color: white;
-border-top: 1px solid red;
-border-left: 1px solid red;
-margin-bottom: 10px;
+    color: white;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    margin-bottom: 10px;
 
 }
 
 .news-box {
- background-color: red;
- width: 50px;
- padding: 0px 5px 0px 4px;
+    background-color: red;
+    width: 50px;
+    padding: 0px 5px 0px 4px;
 }
 
 .box {
@@ -129,9 +144,46 @@ margin-bottom: 10px;
 }
 
 .info {
+    display: flex;
+    flex-direction: row;
+    border-top:1px dotted grey;
     border-bottom:1px dotted grey;
-    padding: 10px;
+    
 }
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box, img {
+    padding: 10px;
+    width: 150px;
+}
+
+@media(max-width: 550px) {
+    .image-box, img {
+        width: 70px;
+    }
+    
+}
+
+@media(max-width: 550px) {
+    h2 {
+        font-size: 1em;
+
+    }  
+    .box {
+        font-size: .8em;
+    }
+    
+}
+
+.link-page {
+    text-decoration: none;
+}
+
 
 .create-date {
     display: flex;
