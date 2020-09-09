@@ -59,7 +59,7 @@ nav {
     align-items: center;
 }
 
-ul {
+.ul-navigation {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -68,7 +68,7 @@ ul {
     margin: 0;
 }
 
-nav>ul>li>a {
+nav>.ul-navigation>.li-navigation>a {
     padding: 3px 10px 3px 10px;
     text-decoration:none;
     color: black;
@@ -80,23 +80,23 @@ nav>ul>li>a {
         justify-content: center;
         align-items: center; 
     }
-    nav>ul {
+    nav>.ul-navigation {
         justify-content: center;
         align-items: center; 
     }
-    nav>ul>li>a {
+    nav>.ul-navigation>.li-navigation>a {
         font-size: .7em;
     }
     
 }
 
 @media(max-width: 300px) {
-    ul, li {
+    .ul-navigation, .li-navigation {
         padding: 3px 5px 3px 5px;
     }
 }
 
-nav>ul>li>a:hover {
+nav>.ul-navigation>.li-navigation>a:hover {
     color: #b7b7b7;
     background-color: #2f2f2f;
     text-decoration: underline;
