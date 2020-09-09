@@ -122,47 +122,21 @@
                     кодировку, в которой нужно выводить текст. В зависимости от того, какую библиотеку PHP вы используете, 
                     команды будут выглядеть так:
                 </p>
-                
                         <div> 
                             Для библиотеки
                             <strong>mysql</strong>:
                             <pre>
-                                <a target="_blank" href="http://www.php.net/mysql_query">
-                                    <span class="kw3">mysql_query</span>
-                                </a>
-                                <span>(</span>
-                                <span>"SET NAMES 'utf8' COLLATE 'utf8_general_ci'"</span>
-                                <span >)</span>
-                                <span>;</span>
-                                    <a target="_blank" href="http://www.php.net/mysql_query">
-                                        <span>mysql_query</span>
-                                    </a>
-                                <span>(</span>
-                                <span>"SET CHARACTER SET 'utf8'"</span>
-                                <span>)</span>
+                                 mysql_query("SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
+                                 mysql_query("SET CHARACTER SET 'utf8'")
                                 <span>;</span>
                             </pre>
                         </div>
-                    
-                        <div> Для библиотеки <strong>mysqli</strong>:<pre class="code php">
-                        <a target="_blank" href="http://www.php.net/mysqli_query">
-                            <span>mysqli_query</span></a>
-                            <span>(</span>
-                            <span>$link</span>
-                            <span>,</span>
-                            <span>"SET NAMES 'utf8' COLLATE 'utf8_general_ci'"</span>
-                            <span>)</span>
-                            <span>;</span>
-                            <a target="_blank" href="http://www.php.net/mysqli_query">
-                            <span>mysqli_query</span>
-                            </a><span>(</span>
-                            <span>$link</span>
-                            <span>,</span>
-                            <span>"SET CHARACTER SET 'utf8'"</span>
-                            <span>)</span><span class="sy0">;</span>
+                        <div> Для библиотеки <strong>mysqli</strong>:
+                            <pre>
+                                mysqli_query($link,"SET NAMES 'utf8' COLLATE 'utf8_general_ci'");
+                                mysqli_query($link, "SET CHARACTER SET 'utf8'");
                             </pre>
                         </div>
-                    
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequuntur architecto facere
                     consectetur saepe nemo, quas
