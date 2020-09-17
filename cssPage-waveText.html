@@ -80,7 +80,8 @@
                     С помощью gif, приведенного ниже, вы можете понять,
                     как я создал волновой эффект.
                 </p>
-                   <xmp style="display: block;
+                <button onclick="copyCode()">Копировать код</button>
+                   <xmp id="code" style="display: block;
                             overflow-x: auto;
                             padding: .5em;
                             color: #abb2bf;
@@ -114,8 +115,6 @@
                              clip-path: polygon(0 66%, 8% 74%, 17% 77%, 28% 70%, 35% 57%, 48% 44%, 56% 39%, 69% 41%, 75% 47%, 84% 60%, 92% 61%, 100% 53%, 100% 100%, 0% 100%);
                        }
                     }
-                     
-                
                </xmp>
             <span class="create-date">
                 2020-09-18
@@ -128,6 +127,14 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+        function copyCode() {
+					  let copyText = document.getElementById("code");
+					  copyText.select();
+					  copyText.setSelectionRange(0, 99999); 
+					  document.execCommand("copy");
+	  }
+    </script>
 </body>
 
 </html>
