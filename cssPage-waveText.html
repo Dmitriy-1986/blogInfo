@@ -80,7 +80,7 @@
                     С помощью gif, приведенного ниже, вы можете понять,
                     как я создал волновой эффект.
                 </p>
-                <button onclick="copyCode(#code)">Копировать код</button>
+                <button id="copyCode">Копировать код</button>
                    <xmp id="code" style="display: block;
                             overflow-x: auto;
                             padding: .5em;
@@ -128,11 +128,13 @@
 
     <script src="./assets/js/script.js"></script>
     <script>
-        function copyCode() {
-		let copyText = document.getElementById("code");
+        function copy() {
+		var copyText = document.querySelector("#code");
 		copyText.select();
 		document.execCommand("copy");
-	  }
+	}
+
+	document.querySelector("#copyCode").addEventListener("click", copy);
     </script>
 </body>
 
