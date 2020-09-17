@@ -81,7 +81,7 @@
                     как я создал волновой эффект.
                 </p>
                 <button id="copyCode">Копировать код</button>
-                   <xmp id="code" style="display: block;
+                   <xmp style="display: block;
                             overflow-x: auto;
                             padding: .5em;
                             color: #abb2bf;
@@ -129,7 +129,7 @@
     <script src="./assets/js/script.js"></script>
     <script>
         function copy() {
-		var copyText = document.querySelector("#code");
+		var copyText = document.querySelector("xmp");
 		copyText.select();
 		document.execCommand("copy");
 	}
