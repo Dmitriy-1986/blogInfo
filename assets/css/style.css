@@ -178,6 +178,16 @@ main {
     text-decoration: none;
 }
 
+.code {
+	resize: none;
+	height:400px;
+	display: block;
+	overflow-x: auto;
+	padding: 15px;
+	color: #abb2bf;
+	background: #282c34;
+	width:100%;
+}
 
 .create-date {
     display: flex;
