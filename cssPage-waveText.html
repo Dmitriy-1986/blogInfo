@@ -82,60 +82,64 @@
                 </p>
                 <button id="copyCode">Копировать код</button>
                 <textarea wrap="off" id="code" class="code">
-<!-- HTML -->
-<section class="waves-demo">
-    <div class="waves" data-word="WAVES">
+  <!-- HTML -->
+  <section class="waves-demo">
+      <div class="waves" data-word="WAVES">
            WAVES
-    </div>
-</section>
+      </div>
+  </section>
                      
-/* CSS */
+  /* CSS */
                      
-section {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    scroll-behavior: smooth;  
-    height: 100vh;
-    font-size: 80px;
-    font-weight: bold;
-    transition: all 200ms;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    display: grid;
-    place-items: center;
-    z-index: 1;
-    cursor: pointer;
-    position: relative;
-    padding: 20px;
-}
-.waves-demo {
-    background: #9ac;
-}
-/*Waves*/
-.waves {
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    position: relative;
-}
-.waves:after{
-    content: attr(data-word);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    animation: waves 2s ease-in-out infinite forwards;
-}
-@keyframes waves{
-    0%, 100% {
-        clip-path: polygon(0 66%, 11% 59%, 18% 51%, 26% 46%, 35% 41%, 48% 44%, 55% 54%, 63% 63%, 76% 60%, 82% 50%, 92% 48%, 100% 53%, 100% 100%, 0% 100%);
+  section {
+       box-sizing: border-box;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       min-height: 100vh;
+       scroll-behavior: smooth;  
+       height: 100vh;
+       font-size: 80px;
+       font-weight: bold;
+       transition: all 200ms;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+       background-position: 50% 50%;
+       display: grid;
+       place-items: center;
+       z-index: 1;
+       cursor: pointer;
+       position: relative;
+       padding: 20px;
+  }
+			
+  .waves-demo {
+      background: #9ac;
+   }
+			
+   /*Waves*/
+   .waves {
+       color: transparent;
+       -webkit-text-stroke: 1px #fff;
+       position: relative;
+   }
+			
+   .waves:after{
+       content: attr(data-word);
+       position: absolute;
+       top: 0;
+       left: 0;
+       color: #fff;
+       animation: waves 2s ease-in-out infinite forwards;
+   }
+			
+   @keyframes waves{
+        0%, 100% {
+            clip-path: polygon(0 66%, 11% 59%, 18% 51%, 26% 46%, 35% 41%, 48% 44%, 55% 54%, 63% 63%, 76% 60%, 82% 50%, 92% 48%, 100% 53%, 100% 100%, 0% 100%);
+        }
+        50% {
+            clip-path: polygon(0 66%, 8% 74%, 17% 77%, 28% 70%, 35% 57%, 48% 44%, 56% 39%, 69% 41%, 75% 47%, 84% 60%, 92% 61%, 100% 53%, 100% 100%, 0% 100%);
+        }
     }
-    50% {
-        clip-path: polygon(0 66%, 8% 74%, 17% 77%, 28% 70%, 35% 57%, 48% 44%, 56% 39%, 69% 41%, 75% 47%, 84% 60%, 92% 61%, 100% 53%, 100% 100%, 0% 100%);
-    }
-}
             </textarea>
             <span class="create-date">
                 2020-09-18
